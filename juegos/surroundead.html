@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SurrounDead Wiki</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f8f9fa;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Encabezado */
+    header {
+      background: #0645ad;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Botón */
+    #temaBoton {
+      padding: 8px 16px;
+      border: none;
+      border-radius: 25px;
+      background-color: #ffffff22;
+      color: white;
+      font-size: 14px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    #temaBoton:hover {
+      background-color: #ffffff44;
+    }
+
+    /* Contenido principal */
+    main {
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+
+    /* Tarjeta derecha */
+    .tarjeta {
+      border: 1px solid #ccc;
+      background-color: #fff;
+      padding: 15px;
+      float: right;
+      width: 270px;
+      margin-left: 20px;
+      border-radius: 10px;
+      text-align: left;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    .tarjeta img {
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+
+    /* Imagen principal */
+    .imagen-principal {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin: 20px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+
+    /* Modo oscuro */
+    .dark-mode {
+      background-color: #121212;
+      color: #f1f1f1;
+    }
+
+    .dark-mode header {
+      background: #1e1e1e;
+      color: #f1f1f1;
+    }
+
+    .dark-mode nav a {
+      color: #4ea1ff;
+    }
+
+    .dark-mode .tarjeta {
+      background-color: #1e1e1e;
+      border-color: #333;
+      color: #f1f1f1;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Encabezado con menú -->
+  <header>
+    <h1>SurrounDead Wiki</h1>
+    <nav>
+      <a href="https://store.steampowered.com/app/1645820/SurrounDead/" target="_blank">Comprar</a>
+      <a href="https://discord.gg/surroundead" target="_blank">Discord</a>
+      <a href="../index.html">Menú Principal</a>
+      <button id="temaBoton">🌙 Oscuro</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Tarjeta con info rápida -->
+    <div class="tarjeta">
+      <img src="../imagenes/surroundeadLogo.jpg" alt="Logo SurrounDead" style="width:100%;">
+      <h3>Información rápida</h3>
+      <p><strong>Género:</strong> Supervivencia en mundo abierto</p>
+      <p><strong>Estética:</strong> Low-poly, minimalista</p>
+      <p><strong>Desarrollador:</strong> PlaySurrounDead</p>
+      <p><strong>Diseñador:</strong> Zurvivor</p>
+      <p><strong>Modos de juego:</strong> Un jugador</p>
+      <p><strong>Unidades vendidas:</strong> +100,000</p>
+      <p><strong>Plataforma:</strong> PC (Steam)</p>
+      <p><strong>Acceso anticipado:</strong> 24 julio 2022</p>
+    </div>
+
+    <!-- Imagen principal -->
+    <img src="../imagenes/SurroundeadPrincipal.avif" alt="SurrounDead gameplay" class="imagen-principal">
+
+    <h2>Descripción</h2>
+    <p>
+      SurrounDead es un juego de supervivencia en un mundo abierto post-apocalíptico con estética low-poly. 
+      Los jugadores deben explorar ciudades abandonadas, recolectar recursos, enfrentarse a zombies y sobrevivir lo máximo posible.
+    </p>
+  </main>
+
+  <script>
+    const boton = document.getElementById("temaBoton");
+    boton.addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+      if (document.body.classList.contains("dark-mode")) {
+        boton.textContent = "☀️ Claro";
+      } else {
+        boton.textContent = "🌙 Oscuro";
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WikiGame</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin: 50px; }
+        img { width: 200px; border-radius: 8px; }
+        .tarjeta { margin-top: 20px; }
+        select { padding: 8px 12px; font-size: 16px; }
+    </style>
+</head>
+<body>
+    <h1>WikiGame</h1>
+    <h2>Bienvenido a WikiGame!</h2>
+    <p>En esta página web encontrarás información sobre tus juegos favoritos como Minecraft y muchos más.</p>
+
+    <!-- Menú de selección -->  
+<select id="menuJuegos">
+  <option value="">Selecciona un juego</option>
+  <option value="minecraft.html">Minecraft</option>
+  <option value="surroundead.html">Surroundead</option>
+  <option value="ark.html">ARK: Survival Evolved</option>
+</select>
+
+    <!-- Contenedor donde se mostrará la información del juego -->
+    <div id="infoJuego" class="tarjeta"></div>
+
+    <!-- JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
