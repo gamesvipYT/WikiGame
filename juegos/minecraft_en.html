@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Minecraft Wiki</title>
+<style>
+  body {
+    font-family: "Arial", sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Header */
+  header {
+    background: #0645ad;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+
+  nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  /* Button */
+  #themeButton {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 25px;
+    background-color: #ffffff22;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  #themeButton:hover {
+    background-color: #ffffff44;
+  }
+
+  /* Main content */
+  main {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+
+  h2 {
+    margin-top: 30px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+  }
+
+  h3 {
+    margin-top: 20px;
+  }
+
+  p, ul {
+    margin: 10px 0;
+  }
+
+  ul {
+    margin-left: 20px;
+  }
+
+  a {
+    color: #0645ad;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  /* Right card */
+  .card {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 15px;
+    float: right;
+    width: 270px;
+    margin-left: 20px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+
+  .card img {
+    border-radius: 6px;
+    margin-bottom: 10px;
+  }
+
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  /* Main image */
+  .main-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  }
+
+  /* Small images */
+  .small-img {
+    width: 160px;
+    border-radius: 6px;
+    margin: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+
+  /* Dark mode */
+  .dark-mode {
+    background-color: #121212;
+    color: #f1f1f1;
+  }
+
+  .dark-mode header {
+    background: #1e1e1e;
+    color: #f1f1f1;
+  }
+
+  .dark-mode nav a {
+    color: #4ea1ff;
+  }
+
+  .dark-mode .card {
+    background-color: #1e1e1e;
+    border-color: #333;
+    color: #f1f1f1;
+  }
+
+  .dark-mode a {
+    color: #4ea1ff;
+  }
+</style>
+</head>
+<body>
+
+  <!-- Header with menu -->
+  <header>
+    <h1>Minecraft Wiki</h1>
+    <nav>
+      <a href="https://www.minecraft.net/" target="_blank">Official Site</a>
+      <a href="../index.html">Main Menu</a>
+      <button id="themeButton">🌙 Dark</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Quick info card -->
+    <div class="card">
+      <img src="../imagenes/minecraftlogo.png" alt="Minecraft Logo" style="width:100%;">
+      <h3>Quick Info</h3>
+      <p><strong>Genre:</strong> Sandbox / Survival</p>
+      <p><strong>Developer:</strong> Mojang Studios</p>
+      <p><strong>Designers:</strong> Notch, Jeb, Dinnerbone</p>
+      <p><strong>Game Modes:</strong> Survival, Creative, Adventure, Spectator</p>
+      <p><strong>Units Sold:</strong> 300M+</p>
+      <p><strong>Platforms:</strong> PC, Consoles, Mobile</p>
+      <p><strong>Release Date:</strong> November 18, 2011</p>
+    </div>
+
+    <!-- Main image -->
+    <img src="../imagenes/minecraft.jpg" alt="Open World Minecraft" class="main-image">
+
+    <p>
+      Minecraft is a sandbox game where players can explore a block-generated world, build structures, and survive against enemies. It allows solo or multiplayer gameplay.
+    </p>
+
+    <h2>Main Features</h2>
+    <ul>
+      <li>Unlimited block building</li>
+      <li>Exploration of infinite worlds</li>
+      <li>Game Modes: Survival, Creative, Adventure</li>
+      <li>Online multiplayer</li>
+    </ul>
+
+    <h2>History and Lore</h2>
+    <p>Minecraft started in 2009 as "Cave Game", created by Markus "Notch" Persson. It quickly evolved, reaching alpha release in 2010 and official release in 2011.</p>
+    <p>Over time, dimensions (Nether, End), bosses like the Ender Dragon, villages, biomes, and mobs were added, giving players narrative depth and freedom.</p>
+    <p>Today, it remains one of the best-selling games worldwide, with constant updates, mods, and an active community.</p>
+
+    <h2>Gameplay</h2>
+    <p>
+      Minecraft is an open-world game with no defined ending (though "The End" provides credits after defeating the Ender Dragon). Gameplay revolves around exploring, mining, and building with blocks.
+    </p>
+    <p>
+      Structures like villages, temples, and fortresses exist, along with possibilities to create mechanisms and farms. Difficulty is configurable, from Peaceful to Hardcore.
+    </p>
+
+    <h2>Minecraft Realms</h2>
+    <p>
+      Released in 2013, Realms offers easy-to-use private servers. Supports custom maps, mods (in some editions), and cross-platform play since 2016.
+    </p>
+
+    <h2>Customization</h2>
+    <p>
+      The modding community has created thousands of mods, textures, and custom maps that expand gameplay, from simple visual changes to complete new mechanics.
+    </p>
+
+    <h2>Game Images</h2>
+    <img src="../imagenes/minecraft1.webp" alt="Minecraft Building" class="small-img">
+    <img src="../imagenes/minecraft_2.webp" alt="Minecraft Exploration" class="small-img">
+
+  </main>
+
+<script>
+  const button = document.getElementById("themeButton");
+  button.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+    if (document.body.classList.contains("dark-mode")) {
+      button.textContent = "☀️ Light";
+    } else {
+      button.textContent = "🌙 Dark";
+    }
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SurrounDead Wiki</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f8f9fa;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: #0645ad;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    #themeButton {
+      padding: 8px 16px;
+      border: none;
+      border-radius: 25px;
+      background-color: #ffffff22;
+      color: white;
+      font-size: 14px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    #themeButton:hover {
+      background-color: #ffffff44;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+
+    .card {
+      border: 1px solid #ccc;
+      background-color: #fff;
+      padding: 15px;
+      float: right;
+      width: 270px;
+      margin-left: 20px;
+      border-radius: 10px;
+      text-align: left;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    .card img {
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+
+    .main-image {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin: 20px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+
+    .dark-mode {
+      background-color: #121212;
+      color: #f1f1f1;
+    }
+
+    .dark-mode header {
+      background: #1e1e1e;
+      color: #f1f1f1;
+    }
+
+    .dark-mode nav a {
+      color: #4ea1ff;
+    }
+
+    .dark-mode .card {
+      background-color: #1e1e1e;
+      border-color: #333;
+      color: #f1f1f1;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>SurrounDead Wiki</h1>
+    <nav>
+      <a href="https://store.steampowered.com/app/1645820/SurrounDead/" target="_blank">Buy</a>
+      <a href="https://discord.gg/surroundead" target="_blank">Discord</a>
+      <a href="../index_en.html">Main Menu</a>
+      <button id="themeButton">🌙 Dark</button>
+    </nav>
+  </header>
+
+  <main>
+    <div class="card">
+      <img src="../imagenes/surroundeadLogo.jpg" alt="SurrounDead Logo" style="width:100%;">
+      <h3>Quick Info</h3>
+      <p><strong>Genre:</strong> Open-world Survival</p>
+      <p><strong>Style:</strong> Low-poly, Minimalist</p>
+      <p><strong>Developer:</strong> PlaySurrounDead</p>
+      <p><strong>Designer:</strong> Zurvivor</p>
+      <p><strong>Game Modes:</strong> Single-player</p>
+      <p><strong>Copies Sold:</strong> +100,000</p>
+      <p><strong>Platform:</strong> PC (Steam)</p>
+      <p><strong>Early Access:</strong> July 24, 2022</p>
+    </div>
+
+    <img src="../imagenes/SurroundeadPrincipal.avif" alt="SurrounDead gameplay" class="main-image">
+
+    <h2>Description</h2>
+    <p>
+      SurrounDead is an open-world post-apocalyptic survival game with a low-poly aesthetic. 
+      Players must explore abandoned cities, gather resources, fight zombies, and survive as long as possible.
+    </p>
+  </main>
+
+  <script>
+    const button = document.getElementById("themeButton");
+    button.addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+      if (document.body.classList.contains("dark-mode")) {
+        button.textContent = "☀️ Light";
+      } else {
+        button.textContent = "🌙 Dark";
+      }
+    });
+  </script>
+</body>
+</html>

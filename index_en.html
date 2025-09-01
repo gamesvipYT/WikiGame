@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WikiGame</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            text-align: center; 
+            margin: 50px; 
+            background-color: #f8f9fa;
+        }
+        img { 
+            width: 200px; 
+            border-radius: 8px; 
+        }
+        .card { 
+            margin-top: 20px; 
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #fff;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+        }
+        .card h3 {
+            margin-top: 0;
+            color: #0645ad;
+        }
+        select { 
+            padding: 8px 12px; 
+            font-size: 16px; 
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="index.html">Español</a> | <a href="index_en.html">English</a>
+    <h1>WikiGame</h1>
+    <h2>Welcome to WikiGame!</h2>
+    <p>Here you will find information about your favorite games like Minecraft, ARK, Mortal Kombat, and many more.</p>
+
+    <!-- Game selection menu -->  
+    <select id="gameMenu">
+        <option value="">Select a game</option>
+        <option value="juegos/minecraft_en.html">Minecraft</option>
+        <option value="juegos/surroundead_en.html">Surroundead</option>
+        <option value="juegos/ark_en.html">ARK: Survival Evolved</option>
+        <option value="juegos/mortal_kombat_en.html">Mortal Kombat</option>
+    </select>
+
+    <!-- Update card -->
+<div class="tarjeta">
+    <h3>📌 Update 0.2</h3>
+    <p>🚀 More and more</p>
+    <ul style="text-align:left;">
+        <li>Added the button to switch languages<strong></strong>.</li>
+        <li>Added the <strong>Minecraft in English</strong> page.</li>
+        <li>Included the <strong>SurrounDead in English</strong> page.</li>
+    </ul>
+</div>
+
+    <script>
+        const menu = document.getElementById('gameMenu');
+        menu.addEventListener('change', () => {
+            const selected = menu.value;
+            if (selected) {
+                window.location.href = selected;
+            }
+        });
+    </script>
+</body>
+</html>
+
+
