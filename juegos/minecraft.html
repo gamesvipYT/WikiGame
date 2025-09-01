@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Minecraft Wiki</title>
+<style>
+  body {
+    font-family: "Arial", sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Encabezado */
+  header {
+    background: #0645ad;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+
+  nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  /* Botón */
+  #temaBoton {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 25px;
+    background-color: #ffffff22;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  #temaBoton:hover {
+    background-color: #ffffff44;
+  }
+
+  /* Contenido principal */
+  main {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+
+  h2 {
+    margin-top: 30px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+  }
+
+  h3 {
+    margin-top: 20px;
+  }
+
+  p, ul {
+    margin: 10px 0;
+  }
+
+  ul {
+    margin-left: 20px;
+  }
+
+  a {
+    color: #0645ad;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  /* Tarjeta derecha */
+  .tarjeta {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 15px;
+    float: right;
+    width: 270px;
+    margin-left: 20px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+
+  .tarjeta img {
+    border-radius: 6px;
+    margin-bottom: 10px;
+  }
+
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  /* Imagen principal */
+  .imagen-principal {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  }
+
+  /* Imágenes pequeñas */
+  .img-pequena {
+    width: 160px;
+    border-radius: 6px;
+    margin: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+
+  /* Modo oscuro */
+  .dark-mode {
+    background-color: #121212;
+    color: #f1f1f1;
+  }
+
+  .dark-mode header {
+    background: #1e1e1e;
+    color: #f1f1f1;
+  }
+
+  .dark-mode nav a {
+    color: #4ea1ff;
+  }
+
+  .dark-mode .tarjeta {
+    background-color: #1e1e1e;
+    border-color: #333;
+    color: #f1f1f1;
+  }
+
+  .dark-mode a {
+    color: #4ea1ff;
+  }
+</style>
+</head>
+<body>
+
+  <!-- Encabezado con menú -->
+  <header>
+    <h1>Minecraft Wiki</h1>
+    <nav>
+      <a href="https://www.minecraft.net/" target="_blank">Sitio oficial</a>
+      <a href="../index.html">Menú Principal</a>
+      <button id="temaBoton">🌙 Oscuro</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Tarjeta con info rápida -->
+    <div class="tarjeta">
+      <img src="../imagenes/minecraftlogo.png" alt="Logo Minecraft" style="width:100%;">
+      <h3>Información rápida</h3>
+      <p><strong>Género:</strong> Sandbox / Supervivencia</p>
+      <p><strong>Desarrollador:</strong> Mojang Studios</p>
+      <p><strong>Diseñadores:</strong> Notch, Jeb, Dinnerbone</p>
+      <p><strong>Modos de juego:</strong> Supervivencia, Creativo, Aventura, Espectador</p>
+      <p><strong>Unidades vendidas:</strong> 300M+</p>
+      <p><strong>Plataformas:</strong> PC, Consolas, Móviles</p>
+      <p><strong>Lanzamiento:</strong> 18 noviembre 2011</p>
+    </div>
+
+    <!-- Imagen principal -->
+    <img src="../imagenes/minecraft.jpg" alt="Minecraft mundo abierto" class="imagen-principal">
+
+    <p>
+      Minecraft es un juego de tipo sandbox donde los jugadores pueden explorar un mundo generado por bloques, construir estructuras y sobrevivir contra enemigos. Permite jugar solo o en modo multijugador.
+    </p>
+
+    <h2>Características principales</h2>
+    <ul>
+      <li>Construcción ilimitada con bloques</li>
+      <li>Exploración de mundos infinitos</li>
+      <li>Modos: Supervivencia, Creativo, Aventura</li>
+      <li>Multijugador online</li>
+    </ul>
+
+    <h2>Historia y Lore</h2>
+    <p>Minecraft comenzó en 2009 como "Cave Game", creado por Markus "Notch" Persson. Su evolución rápida llevó a un lanzamiento alfa en 2010 y oficial en 2011.</p>
+    <p>Con el tiempo se agregaron dimensiones (Nether, End), jefes como el Ender Dragon, aldeas, biomas y mobs, dando profundidad y libertad narrativa a los jugadores.</p>
+    <p>Hoy en día sigue siendo uno de los juegos más vendidos del mundo, con actualizaciones constantes, mods y una comunidad activa.</p>
+
+    <h2>Jugabilidad</h2>
+    <p>
+      Minecraft es un juego de mundo abierto, sin un final definido (aunque "The End" ofrece créditos tras derrotar al Ender Dragon). 
+      La jugabilidad gira en torno a explorar, minar y construir con bloques. 
+    </p>
+    <p>
+      Existen estructuras como aldeas, templos y fortalezas, además de la posibilidad de crear mecanismos y granjas. 
+      La dificultad es configurable, desde Pacífico hasta Extremo.
+    </p>
+
+    <h2>Minecraft Realms</h2>
+    <p>
+      Lanzado en 2013, Realms ofrece servidores privados fáciles de usar. Admite mapas personalizados, mods (en algunas ediciones) y juego multiplataforma desde 2016.
+    </p>
+
+    <h2>Personalización</h2>
+    <p>
+      La comunidad de modding ha creado miles de mods, texturas y mapas personalizados que expanden la jugabilidad, desde simples cambios visuales hasta mecánicas completas.
+    </p>
+
+    <h2>Imágenes del juego</h2>
+    <img src="../imagenes/minecraft1.webp" alt="Construcción en Minecraft" class="img-pequena">
+    <img src="../imagenes/minecraft_2.webp" alt="Exploración en Minecraft" class="img-pequena">
+
+  </main>
+
+<script>
+  const boton = document.getElementById("temaBoton");
+  boton.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+    if (document.body.classList.contains("dark-mode")) {
+      boton.textContent = "☀️ Claro";
+    } else {
+      boton.textContent = "🌙 Oscuro";
+    }
+  });
+</script>
+
+</body>
+</html>

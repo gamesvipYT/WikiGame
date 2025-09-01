@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Minecraft Wiki</title>
+<style>
+  body {
+    font-family: "Arial", sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Encabezado */
+  header {
+    background: #0645ad;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+
+  nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  /* Botón */
+  #temaBoton {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 25px;
+    background-color: #ffffff22;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  #temaBoton:hover {
+    background-color: #ffffff44;
+  }
+
+  /* Contenido principal */
+  main {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+
+  h2 {
+    margin-top: 30px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+  }
+
+  h3 {
+    margin-top: 20px;
+  }
+
+  p, ul {
+    margin: 10px 0;
+  }
+
+  ul {
+    margin-left: 20px;
+  }
+
+  a {
+    color: #0645ad;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  /* Tarjeta derecha */
+  .tarjeta {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 15px;
+    float: right;
+    width: 270px;
+    margin-left: 20px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+
+  .tarjeta img {
+    border-radius: 6px;
+    margin-bottom: 10px;
+  }
+
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  /* Imagen principal */
+  .imagen-principal {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  }
+
+  /* Imágenes pequeñas */
+  .img-pequena {
+    width: 160px;
+    border-radius: 6px;
+    margin: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+
+  /* Modo oscuro */
+  .dark-mode {
+    background-color: #121212;
+    color: #f1f1f1;
+  }
+
+  .dark-mode header {
+    background: #1e1e1e;
+    color: #f1f1f1;
+  }
+
+  .dark-mode nav a {
+    color: #4ea1ff;
+  }
+
+  .dark-mode .tarjeta {
+    background-color: #1e1e1e;
+    border-color: #333;
+    color: #f1f1f1;
+  }
+
+  .dark-mode a {
+    color: #4ea1ff;
+  }
+</style>
+</head>
+<body>
+
+  <!-- Encabezado con menú -->
+  <header>
+    <h1>Mortal Kombat Wiki</h1>
+    <nav>
+      <a href="https://www.mortalkombat.com/es-es" target="_blank">Sitio oficial</a>
+      <a href="../index.html">Menú Principal</a>
+      <button id="temaBoton">🌙 Oscuro</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Tarjeta con info rápida -->
+<div class="tarjeta">
+  <img src="../imagenes/mortal_logo.jpg" alt="Logo Mortal Kombat" style="width:100%;">
+  <h3>Información rápida</h3>
+  <p><strong>Género:</strong> Lucha</p>
+  <p><strong>Desarrollador:</strong> Midway Games (clásicos), NetherRealm Studios (actuales)</p>
+  <p><strong>Diseñadores:</strong> Ed Boon, John Tobias</p>
+  <p><strong>Modos de juego:</strong> Un jugador, Multijugador local, Multijugador en línea</p>
+  <p><strong>Unidades vendidas:</strong> 80M+ (saga completa)</p>
+  <p><strong>Plataformas:</strong> Arcade, PC, Consolas</p>
+  <p><strong>Lanzamiento:</strong> 8 octubre 1992</p>
+</div>
+
+
+    <!-- Imagen principal -->
+    <img src="../imagenes/mortal_imagen_principal.jpg" alt="Minecraft mundo abierto" class="imagen-principal">
+
+    <p>
+      Mortal Kombat (comúnmente abreviado MK) es una franquicia de videojuegos de lucha uno contra uno creada por Ed Boon y John Tobias en 1992. Las cuatro primeras entregas fueron distribuidas por Midway Games y lanzadas principalmente en máquinas arcade; posteriormente estuvieron disponibles en consolas domésticas.
+    </p>
+
+    <h2>Características principales</h2>
+    <ul>
+      <li>Lucha uno contra uno</li>
+      <li>Movimientos especiales y combos</li>
+      <li>Sistema de energía</li>
+      <li>Personalización de personajes</li>
+      <li>Modo historia</li>
+    </ul>
+
+    <h2>Historia y Lore</h2>
+    <p>Mortal Kombat nació en 1992 como un juego de lucha creado por Midway Games, destacando por su estilo violento, sus icónicos Fatalities y personajes únicos.</p>
+    <p>La trama gira en torno a torneos entre reinos como Earthrealm y Outworld, donde guerreros como Liu Kang, Raiden y Scorpion luchan contra villanos como Shang Tsung y Shao Kahn.</p>
+    <p>A lo largo de los años, la saga ha expandido su lore con dioses ancestrales, conflictos entre realidades y un ciclo de reencarnaciones, convirtiéndose en una de las franquicias más influyentes y duraderas en el género de la lucha.</p>
+
+    <h2>Jugabilidad</h2>
+   <h2>Jugabilidad</h2>
+    <p>Mortal Kombat es un juego de lucha uno contra uno donde los jugadores eligen a un personaje con habilidades únicas. Cada luchador posee combos, ataques especiales y movimientos característicos.
+    El combate se desarrolla en rondas, donde el objetivo es reducir la barra de vida del oponente utilizando golpes, bloqueos y estrategias. La saga es reconocida por su violencia gráfica y por introducir los "Fatalities", remates espectaculares al final del combate.
+    Con el paso del tiempo, la jugabilidad se ha expandido con nuevos modos, como historia cinematográfica, torres de desafíos, peleas en línea y personalización de personajes.<p>
+   
+
+    <h2>Multijugador</h2>
+    <p>El multijugador es una parte esencial de Mortal Kombat. Los jugadores pueden enfrentarse tanto de manera local en la misma consola como en línea contra rivales de todo el mundo.
+    Las partidas en línea incluyen combates casuales, clasificatorios y torneos, donde se ponen a prueba las habilidades en un sistema competitivo. También existen las “Torres del Tiempo” y eventos especiales que ofrecen recompensas al completar retos junto con otros jugadores.
+    En el modo local, es posible jugar con amigos en duelos directos o en modos por equipos, manteniendo la experiencia clásica de los primeros títulos de la saga.<p>
+
+    <h2>Personalización</h2>
+    <p>
+    Mortal Kombat permite personalizar a los luchadores con trajes alternativos, skins y accesorios desbloqueables. Además, los jugadores pueden ajustar configuraciones de controles, combos y escenarios para adaptar la experiencia a su estilo de juego.
+    </p>
+
+    <h2>Imágenes del juego</h2>
+    <img src="../imagenes/mortal_1.webp" alt="Construcción en Minecraft" class="img-pequena">
+    <img src="../imagenes/mortal_2.jpg" alt="Exploración en Minecraft" class="img-pequena">
+
+  </main>
+
+<script>
+  const boton = document.getElementById("temaBoton");
+  boton.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+    if (document.body.classList.contains("dark-mode")) {
+      boton.textContent = "☀️ Claro";
+    } else {
+      boton.textContent = "🌙 Oscuro";
+    }
+  });
+</script>
+
+</body>
+</html>

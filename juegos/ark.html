@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Minecraft Wiki</title>
+<style>
+  body {
+    font-family: "Arial", sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Encabezado */
+  header {
+    background: #0645ad;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+
+  nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  /* Botón */
+  #temaBoton {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 25px;
+    background-color: #ffffff22;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  #temaBoton:hover {
+    background-color: #ffffff44;
+  }
+
+  /* Contenido principal */
+  main {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+
+  h2 {
+    margin-top: 30px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+  }
+
+  h3 {
+    margin-top: 20px;
+  }
+
+  p, ul {
+    margin: 10px 0;
+  }
+
+  ul {
+    margin-left: 20px;
+  }
+
+  a {
+    color: #0645ad;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  /* Tarjeta derecha */
+  .tarjeta {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 15px;
+    float: right;
+    width: 270px;
+    margin-left: 20px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+
+  .tarjeta img {
+    border-radius: 6px;
+    margin-bottom: 10px;
+  }
+
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  /* Imagen principal */
+  .imagen-principal {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  }
+
+  /* Imágenes pequeñas */
+  .img-pequena {
+    width: 160px;
+    border-radius: 6px;
+    margin: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+
+  /* Modo oscuro */
+  .dark-mode {
+    background-color: #121212;
+    color: #f1f1f1;
+  }
+
+  .dark-mode header {
+    background: #1e1e1e;
+    color: #f1f1f1;
+  }
+
+  .dark-mode nav a {
+    color: #4ea1ff;
+  }
+
+  .dark-mode .tarjeta {
+    background-color: #1e1e1e;
+    border-color: #333;
+    color: #f1f1f1;
+  }
+
+  .dark-mode a {
+    color: #4ea1ff;
+  }
+</style>
+</head>
+<body>
+
+  <!-- Encabezado con menú -->
+  <header>
+    <h1>Ark Wiki</h1>
+    <nav>
+      <a href="https://playark.com/ark-survival-evolved/" target="_blank">Sitio oficial</a>
+      <a href="../index.html">Menú Principal</a>
+      <button id="temaBoton">🌙 Oscuro</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Tarjeta con info rápida -->
+    <div class="tarjeta">
+      <img src="../imagenes/ark.webp" alt="Logo Minecraft" style="width:100%;">
+<h3>Información rápida</h3>
+<p><strong>Género:</strong> Supervivencia / Mundo Abierto</p>
+<p><strong>Desarrollador:</strong> Studio Wildcard</p>
+<p><strong>Diseñadores:</strong> Jesse Rapczak, Jeremy Stieglitz</p>
+<p><strong>Modos de juego:</strong> Un jugador, Multijugador online</p>
+<p><strong>Unidades vendidas:</strong> 30M+</p>
+<p><strong>Plataformas:</strong> PC, PlayStation, Xbox, Nintendo Switch, Móviles</p>
+<p><strong>Lanzamiento:</strong> 29 agosto 2017</p>
+</div>
+
+    <!-- Imagen principal -->
+    <img src="../imagenes/ark_principal.jpg" alt="Minecraft mundo abierto" class="imagen-principal">
+
+    <p>
+      ARK: Survival Evolved es un juego de supervivencia en mundo abierto donde los jugadores deben explorar una isla repleta de dinosaurios y criaturas prehistóricas. Se pueden recolectar recursos, construir refugios, domesticar animales y enfrentarse a distintos peligros para sobrevivir. Ofrece modos para jugar en solitario o en multijugador, formando tribus y compartiendo estrategias.
+    </p>
+
+    <h2>Características principales</h2>
+    <ul>
+      <li>Mundo abierto prehistórico</li>
+      <li>Domar dinosaurios</li>
+      <li>Construcción</li>
+      <li>Recolección y crafteo</li>
+      <li>Supervivencia</li>
+      <li>Combate</li>
+      <li>Modo multijugador</li>
+      <li>Evolución tecnológica</li>
+    </ul>
+
+    <h2>¿Que es ARK: Survival Evolved?</h2>
+    <p>Eres un superviviente en una isla llamada ARK, donde debes evitar morir de hambre o frío.</p>
+    <p>Para sobrevivir, tendrás que cazar, recolectar, crear objetos, construir refugios y domesticar dinosaurios y otras criaturas.</p>
+    <p>Además, puedes unirte o enfrentarte a otros jugadores mientras descubres los secretos de la isla.</p>
+
+    <h2>Características de ARK</h2>
+    <p>
+      🌍 Sobrevive en un mundo salvaje y misterioso
+
+Administra tu comida, agua, temperatura y clima para mantenerte con vida.
+
+Recolecta recursos, construye estructuras y personaliza tu mundo pintando objetos, criaturas… ¡y hasta a ti mismo!
+
+Planta, cultiva y cosecha para asegurar tu supervivencia.
+    </p>
+    <p>
+      🦖 Domina a las criaturas prehistóricas
+
+    Domestica dinosaurios y otras bestias, aprovechando sus habilidades únicas.
+    Explora un ecosistema vivo lleno de peligros y misterios.
+    </p>
+
+    <p>
+      ⚒️ Progresión y creación
+
+    Aprende a fabricar herramientas y armas con los Engramas.
+    Crea recetas únicas con el sistema de cocinado personalizable.
+    Colecciona artefactos valiosos en las profundidades de peligrosas cuevas.
+    </p>
+
+    <p>
+      🔥 Desafíos extremos
+
+    Enfréntate a jefes supremos al invocar las Formas de Vida Final.
+    Forma parte de un sistema avanzado de tribus y coopera o enfréntate a otros sobrevivientes.
+    Descubre secretos ocultos con las notas de explorador.
+    </p>
+
+    <p>
+      💻 Experiencia completa
+
+    Disfruta de gráficos avanzados para una inmersión total.
+    Juega con mods y contenido del Steam Workshop gracias al Kit de Desarrollo.
+    Aloja tu propio servidor dedicado y crea tus propias reglas.
+    </p>
+
+    
+    <h2>Imágenes del juego</h2>
+    <img src="../imagenes/ark_imagen1.avif" alt="Construcción en Minecraft" class="img-pequena">
+    <img src="../imagenes/ark_imagen2.jpg" alt="Exploración en Minecraft" class="img-pequena">
+
+  </main>
+
+<script>
+  const boton = document.getElementById("temaBoton");
+  boton.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+    if (document.body.classList.contains("dark-mode")) {
+      boton.textContent = "☀️ Claro";
+    } else {
+      boton.textContent = "🌙 Oscuro";
+    }
+  });
+</script>
+
+</body>
+</html>
