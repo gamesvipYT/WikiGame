@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ark Wiki</title>
+<style>
+  body {
+    font-family: "Arial", sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Header */
+  header {
+    background: #0645ad;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+
+  nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  /* Button */
+  #temaBoton {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 25px;
+    background-color: #ffffff22;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  #temaBoton:hover {
+    background-color: #ffffff44;
+  }
+
+  /* Main content */
+  main {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+
+  h2 {
+    margin-top: 30px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+  }
+
+  h3 {
+    margin-top: 20px;
+  }
+
+  p, ul {
+    margin: 10px 0;
+  }
+
+  ul {
+    margin-left: 20px;
+  }
+
+  a {
+    color: #0645ad;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  /* Right card */
+  .tarjeta {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 15px;
+    float: right;
+    width: 270px;
+    margin-left: 20px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+
+  .tarjeta img {
+    border-radius: 6px;
+    margin-bottom: 10px;
+  }
+
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  /* Main image */
+  .imagen-principal {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  }
+
+  /* Small images */
+  .img-pequena {
+    width: 160px;
+    border-radius: 6px;
+    margin: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+
+  /* Dark mode */
+  .dark-mode {
+    background-color: #121212;
+    color: #f1f1f1;
+  }
+
+  .dark-mode header {
+    background: #1e1e1e;
+    color: #f1f1f1;
+  }
+
+  .dark-mode nav a {
+    color: #4ea1ff;
+  }
+
+  .dark-mode .tarjeta {
+    background-color: #1e1e1e;
+    border-color: #333;
+    color: #f1f1f1;
+  }
+
+  .dark-mode a {
+    color: #4ea1ff;
+  }
+</style>
+</head>
+<body>
+
+  <!-- Header with menu -->
+  <header>
+    <h1>Ark Wiki</h1>
+    <nav>
+      <a href="https://playark.com/ark-survival-evolved/" target="_blank">Official site</a>
+      <a href="../index_en.html">Main Menu</a>
+      <button id="temaBoton">🌙 Dark</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Quick info card -->
+    <div class="tarjeta">
+      <img src="../imagenes/ark.webp" alt="Ark Logo" style="width:100%;">
+      <h3>Quick Information</h3>
+      <p><strong>Genre:</strong> Survival / Open World</p>
+      <p><strong>Developer:</strong> Studio Wildcard</p>
+      <p><strong>Designers:</strong> Jesse Rapczak, Jeremy Stieglitz</p>
+      <p><strong>Game Modes:</strong> Singleplayer, Online Multiplayer</p>
+      <p><strong>Units Sold:</strong> 30M+</p>
+      <p><strong>Platforms:</strong> PC, PlayStation, Xbox, Nintendo Switch, Mobile</p>
+      <p><strong>Release Date:</strong> August 29, 2017</p>
+    </div>
+
+    <!-- Main image -->
+    <img src="../imagenes/ark_principal.jpg" alt="Ark open world" class="imagen-principal">
+
+    <p>
+      ARK: Survival Evolved is an open-world survival game where players must explore an island filled with dinosaurs and prehistoric creatures. 
+      You can gather resources, build shelters, tame animals, and face various dangers to survive. 
+      The game offers both solo and multiplayer modes, allowing players to form tribes and share strategies.
+    </p>
+
+    <h2>Main Features</h2>
+    <ul>
+      <li>Prehistoric open world</li>
+      <li>Tame dinosaurs</li>
+      <li>Building</li>
+      <li>Gathering and crafting</li>
+      <li>Survival</li>
+      <li>Combat</li>
+      <li>Multiplayer mode</li>
+      <li>Technological progression</li>
+    </ul>
+
+    <h2>What is ARK: Survival Evolved?</h2>
+    <p>You are a survivor on an island called ARK, where you must avoid dying from hunger or cold.</p>
+    <p>To survive, you will need to hunt, gather, craft items, build shelters, and tame dinosaurs and other creatures.</p>
+    <p>Additionally, you can join or fight other players while uncovering the island’s secrets.</p>
+
+    <h2>ARK Features</h2>
+    <p>
+      🌍 Survive in a wild and mysterious world  
+      Manage your food, water, temperature, and weather to stay alive.  
+      Gather resources, build structures, and customize your world by painting objects, creatures… and even yourself!  
+      Plant, farm, and harvest to secure your survival.
+    </p>
+    <p>
+      🦖 Master prehistoric creatures  
+      Tame dinosaurs and other beasts, using their unique abilities.  
+      Explore a living ecosystem full of dangers and mysteries.
+    </p>
+
+    <p>
+      ⚒️ Progression and crafting  
+      Learn to craft tools and weapons using Engrams.  
+      Create unique recipes with the customizable cooking system.  
+      Collect valuable artifacts deep inside dangerous caves.
+    </p>
+
+    <p>
+      🔥 Extreme challenges  
+      Face supreme bosses by summoning the Final Lifeforms.  
+      Take part in an advanced tribe system and either cooperate or fight against other survivors.  
+      Discover hidden secrets with explorer notes.
+    </p>
+
+    <p>
+      💻 Full experience  
+      Enjoy advanced graphics for total immersion.  
+      Play with mods and Steam Workshop content thanks to the Dev Kit.  
+      Host your own dedicated server and create your own rules.
+    </p>
+
+    <h2>Game Images</h2>
+    <img src="../imagenes/ark_imagen1.avif" alt="Ark building" class="img-pequena">
+    <img src="../imagenes/ark_imagen2.jpg" alt="Ark exploration" class="img-pequena">
+
+  </main>
+
+<script>
+  const boton = document.getElementById("temaBoton");
+  boton.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+    if (document.body.classList.contains("dark-mode")) {
+      boton.textContent = "☀️ Light";
+    } else {
+      boton.textContent = "🌙 Dark";
+    }
+  });
+</script>
+
+</body>
+</html>

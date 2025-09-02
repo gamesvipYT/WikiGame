@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mortal Kombat Wiki</title>
+<style>
+  body {
+    font-family: "Arial", sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Header */
+  header {
+    background: #0645ad;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+
+  nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  /* Button */
+  #temaBoton {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 25px;
+    background-color: #ffffff22;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  #temaBoton:hover {
+    background-color: #ffffff44;
+  }
+
+  /* Main content */
+  main {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+
+  h2 {
+    margin-top: 30px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+  }
+
+  h3 {
+    margin-top: 20px;
+  }
+
+  p, ul {
+    margin: 10px 0;
+  }
+
+  ul {
+    margin-left: 20px;
+  }
+
+  a {
+    color: #0645ad;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  /* Right card */
+  .tarjeta {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 15px;
+    float: right;
+    width: 270px;
+    margin-left: 20px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+
+  .tarjeta img {
+    border-radius: 6px;
+    margin-bottom: 10px;
+  }
+
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  /* Main image */
+  .imagen-principal {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  }
+
+  /* Small images */
+  .img-pequena {
+    width: 160px;
+    border-radius: 6px;
+    margin: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+
+  /* Dark mode */
+  .dark-mode {
+    background-color: #121212;
+    color: #f1f1f1;
+  }
+
+  .dark-mode header {
+    background: #1e1e1e;
+    color: #f1f1f1;
+  }
+
+  .dark-mode nav a {
+    color: #4ea1ff;
+  }
+
+  .dark-mode .tarjeta {
+    background-color: #1e1e1e;
+    border-color: #333;
+    color: #f1f1f1;
+  }
+
+  .dark-mode a {
+    color: #4ea1ff;
+  }
+</style>
+</head>
+<body>
+
+  <!-- Header with menu -->
+  <header>
+    <h1>Mortal Kombat Wiki</h1>
+    <nav>
+      <a href="https://www.mortalkombat.com" target="_blank">Official Site</a>
+      <a href="../index_en.html">Main Menu</a>
+      <button id="temaBoton">🌙 Dark</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Quick info card -->
+<div class="tarjeta">
+  <img src="../imagenes/mortal_logo.jpg" alt="Mortal Kombat Logo" style="width:100%;">
+  <h3>Quick Info</h3>
+  <p><strong>Genre:</strong> Fighting</p>
+  <p><strong>Developer:</strong> Midway Games (classic), NetherRealm Studios (current)</p>
+  <p><strong>Designers:</strong> Ed Boon, John Tobias</p>
+  <p><strong>Game Modes:</strong> Single-player, Local multiplayer, Online multiplayer</p>
+  <p><strong>Units Sold:</strong> 80M+ (entire franchise)</p>
+  <p><strong>Platforms:</strong> Arcade, PC, Consoles</p>
+  <p><strong>Release Date:</strong> October 8, 1992</p>
+</div>
+
+    <!-- Main image -->
+    <img src="../imagenes/mortal_imagen_principal.jpg" alt="Mortal Kombat Main Image" class="imagen-principal">
+
+    <p>
+      Mortal Kombat (commonly abbreviated MK) is a one-on-one fighting video game franchise created by Ed Boon and John Tobias in 1992. The first four installments were distributed by Midway Games and released mainly on arcade machines; later they became available on home consoles.
+    </p>
+
+    <h2>Main Features</h2>
+    <ul>
+      <li>One-on-one fighting</li>
+      <li>Special moves and combos</li>
+      <li>Energy system</li>
+      <li>Character customization</li>
+      <li>Story mode</li>
+    </ul>
+
+    <h2>History and Lore</h2>
+    <p>Mortal Kombat was born in 1992 as a fighting game created by Midway Games, standing out for its violent style, iconic Fatalities, and unique characters.</p>
+    <p>The story revolves around tournaments between realms such as Earthrealm and Outworld, where warriors like Liu Kang, Raiden, and Scorpion battle against villains like Shang Tsung and Shao Kahn.</p>
+    <p>Over the years, the saga has expanded its lore with elder gods, conflicts between realities, and a cycle of reincarnations, making it one of the most influential and long-lasting franchises in the fighting genre.</p>
+
+    <h2>Gameplay</h2>
+    <p>Mortal Kombat is a one-on-one fighting game where players choose a character with unique abilities. Each fighter has combos, special attacks, and signature moves.  
+    The fight takes place in rounds, with the goal of reducing the opponent’s health bar using strikes, blocks, and strategies. The saga is known for its graphic violence and for introducing "Fatalities," spectacular finishing moves at the end of matches.  
+    Over time, gameplay has expanded with new modes such as cinematic story, challenge towers, online fights, and character customization.</p>
+   
+
+    <h2>Multiplayer</h2>
+    <p>Multiplayer is an essential part of Mortal Kombat. Players can face each other both locally on the same console and online against rivals from around the world.  
+    Online matches include casual fights, ranked matches, and tournaments, testing skills in a competitive system. There are also "Towers of Time" and special events that offer rewards for completing challenges with other players.  
+    In local mode, it’s possible to play with friends in direct duels or team modes, preserving the classic experience of the saga’s first titles.</p>
+
+    <h2>Customization</h2>
+    <p>
+    Mortal Kombat allows players to customize fighters with alternate outfits, skins, and unlockable accessories. Additionally, players can adjust control settings, combos, and stages to tailor the experience to their playstyle.
+    </p>
+
+    <h2>Game Images</h2>
+    <img src="../imagenes/mortal_1.webp" alt="Mortal Kombat Image 1" class="img-pequena">
+    <img src="../imagenes/mortal_2.jpg" alt="Mortal Kombat Image 2" class="img-pequena">
+
+  </main>
+
+<script>
+  const boton = document.getElementById("temaBoton");
+  boton.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+    if (document.body.classList.contains("dark-mode")) {
+      boton.textContent = "☀️ Light";
+    } else {
+      boton.textContent = "🌙 Dark";
+    }
+  });
+</script>
+
+</body>
+</html>

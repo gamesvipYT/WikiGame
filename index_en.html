@@ -15,7 +15,7 @@
             width: 200px; 
             border-radius: 8px; 
         }
-        .card { 
+      .card { 
             margin-top: 20px; 
             padding: 15px;
             border: 1px solid #ccc;
@@ -35,6 +35,39 @@
             font-size: 16px; 
             border-radius: 6px;
         }
+
+         .support-card {
+    background: #f5f5f5;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 30px auto;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  .support-card h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  .support-card p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #555;
+  }
+  .support-card a {
+    display: inline-block;
+    background: #007acc;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  .support-card a:hover {
+    background: #005f99;
+  }
     </style>
 </head>
 <body>
@@ -49,19 +82,26 @@
         <option value="">Select a game</option>
         <option value="juegos/minecraft_en.html">Minecraft</option>
         <option value="juegos/surroundead_en.html">Surroundead</option>
-        <option value="juegos/ark_en.html">ARK: Survival Evolved</option>
+        <option value="juegos/ark-en.html">ARK: Survival Evolved</option>
         <option value="juegos/mortal_kombat_en.html">Mortal Kombat</option>
     </select>
 
-    <!-- Update card -->
-<div class="tarjeta">
-    <h3>📌 Update 0.2</h3>
-    <p>🚀 More and more</p>
+ <!-- Update Card -->
+<div class="card">
+    <h3>📌 Update 0.3</h3>
+    <p>🚀 Expanding with new content</p>
     <ul style="text-align:left;">
-        <li>Added the button to switch languages<strong></strong>.</li>
-        <li>Added the <strong>Minecraft in English</strong> page.</li>
-        <li>Included the <strong>SurrounDead in English</strong> page.</li>
+        <li>Added a button to collaborate on the repository<strong></strong>.</li>
+        <li>Added the page for <strong>Ark (English)</strong>.</li>
+        <li>Included the page for <strong>Mortal Kombat (English)</strong>.</li>
     </ul>
+</div>
+
+<!-- Support Card -->
+<div class="support-card">
+  <h2>🤝 Support this Wiki</h2>
+  <p>If you want to contribute or improve this Wiki, check out the code on GitHub and support us with your contributions.</p>
+  <a href="https://github.com/gamesvipYT/WikiGame?tab=readme-ov-file" target="_blank">🔗 Go to repository</a>
 </div>
 
     <script>
